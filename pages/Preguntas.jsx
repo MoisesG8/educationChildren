@@ -64,10 +64,6 @@ export default function Preguntas() {
                         <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                             {
                                 respuestaLetras.map((respuesta, index1) => {
-                                    /*if (pregunta.idPregunta == respuesta.id) {
-                                        respuestas = [respuesta.respuesta1, respuesta.respuesta2, respuesta.respuesta3]
-                                        respuestasId = respuesta.id;
-                                    }*/
                                     return (
                                         <Button key={index1} title={respuesta.respuesta} color={'success'} buttonStyle={styles.button} onPress={() => evaluarRespuesta(pregunta, respuesta.id)} />
                                     )
